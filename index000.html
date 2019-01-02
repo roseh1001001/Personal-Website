@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6 lt8 lt9 lt10"><![endif]-->
+<!--[if IE 7]><html class="ie ie7 lt8 lt9 lt10"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lt9 lt10"><![endif]-->
+<!--[if IE 9]><html class="ie ie9 lt10"><![endif]-->
+<!--[if (gt IE 9) | !(IE)]><!--><html><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>黃筱齊</title>
+    <link rel="stylesheet" type="text/css" href="https://web2.qatar.cmu.edu/~xiaoqih1/global.css">
+    <script src="http://www.dpm.org.cn/Public/static/subject/zhaomengfu/common6/js/jquery.js"></script>
+    <script src="http://www.dpm.org.cn/Public/static/subject/zhaomengfu/common6/js/global.js"></script>
+    <script src="http://www.dpm.org.cn/Public/static/subject/zhaomengfu/common6/js/jquery.mScroll.js"></script>
+    <style>
+        a:hover{
+            color:#6a0c0c;
+        }
+    </style>
+</head>
+<body class="ind">
+<div class="body">
+    <div class="home1">
+        <div class="home1_box">
+            <div class="img"><img src="https://web2.qatar.cmu.edu/~xiaoqih1/IMG37.png" /></div>                <div class="text-box">
+            <div class="title">
+            </div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="list-text"><p><a href="https://web2.qatar.cmu.edu/~xiaoqih1/CV.pdf"> </div>
+        </div>
+
+        <div class="home2_box">
+            <div class="text-box1">
+                <p> </p>
+                <p> </p>
+                <p>地球的寿命有46亿年，</p>
+                <p>银河系的寿命有140亿年，</p>
+                <p>而在宇宙中，像银河系这样的星系，多的数之不尽。</p>
+                <p> </p>
+                <p> </p>
+            </div>
+            <div class="link">
+                <a href="javascript:void(0);">Enter >></a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- start Dplus -->
+<script type="text/javascript">!function(a,b){if(!b.__SV){var c,d,e,f;window.dplus=b,b._i=[],b.init=function(a,c,d){function g(a,b){var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]),a[b]=function(){a.push([b].concat(Array.prototype.slice.call(arguments,0)))}}var h=b;for("undefined"!=typeof d?h=b[d]=[]:d="dplus",h.people=h.people||[],h.toString=function(a){var b="dplus";return"dplus"!==d&&(b+="."+d),a||(b+=" (stub)"),b},h.people.toString=function(){return h.toString(1)+".people (stub)"},e="disable track track_links track_forms register unregister get_property identify clear set_config get_config get_distinct_id track_pageview register_once track_with_tag time_event people.set people.unset people.delete_user".split(" "),f=0;f<e.length;f++)g(h,e[f]);b._i.push([a,c,d])},b.__SV=1.1,c=a.createElement("script"),c.type="text/javascript",c.charset="utf-8",c.async=!0,c.src="//w.cnzz.com/dplus.php?id=1261553859",d=a.getElementsByTagName("script")[0],d.parentNode.insertBefore(c,d)}}(document,window.dplus||[]),dplus.init("1261553859");
+</script>
+<script>
+    $(function(){
+        var dplus_title = "黄筱齐blog";
+        var dplus_channel = '黄筱齐blog';
+        var dplus_type = "首页";
+
+        dplus.track("浏览行为",{"页面title": dplus_title,"频道名称":dplus_channel,"页面类型":dplus_type,"内容形式":"" });
+    })
+
+</script>
+<!-- end Dplus -->
+</body>
+</html>
+
+<script>
+    $(function(){
+        $(window).resize(function(){
+            $(".home1").css({height:$(window).height()});
+        }).trigger("resize");
+    })
+
+    window.onload = function(){
+        $(".home2_box .text-box1 p").each(function(i){
+            $(this).css({transitionDelay:i*1.2+"s"});
+        });
+
+        $(".home2_box").addClass('show');
+        function jump(){
+            $(".home2_box").css({transitionProperty:'none'});
+            $(".home2_box").animate({opacity:0},1300);
+            $(".home1").addClass('show');
+        }
+        setTimeout(function(){
+            jump();
+        },11000);
+
+        $(".link a").bind('click',function(){
+            jump();
+            return false;
+        });
+
+    }
+</script>
